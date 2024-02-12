@@ -1,0 +1,10 @@
+^C:\USERS\FABRICE\DOCUMENTS\PROJECTS\DRX\BUILD\CMAKEFILES\59775D1C83F6D955D67162A1F8C2392B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Fabrice/Documents/Projects/drx -BC:/Users/Fabrice/Documents/Projects/drx/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Fabrice/Documents/Projects/drx/build/DroneSimulation.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
