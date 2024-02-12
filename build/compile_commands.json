@@ -1,20 +1,20 @@
 [
 {
   "directory": "/Users/fabricebeya/Documents/GitHub/drx/build",
-  "command": "/usr/bin/clang++  -I/Users/fabricebeya/Documents/GitHub/drx/include -isystem /opt/homebrew/include/eigen3 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/DroneSimulation.dir/src/main.cpp.o -c /Users/fabricebeya/Documents/GitHub/drx/src/main.cpp",
-  "file": "/Users/fabricebeya/Documents/GitHub/drx/src/main.cpp",
-  "output": "CMakeFiles/DroneSimulation.dir/src/main.cpp.o"
+  "command": "/usr/bin/clang  -I/Users/fabricebeya/Documents/GitHub/drx/include -g -std=gnu99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/DroneControlSystem.dir/src/main.c.o -c /Users/fabricebeya/Documents/GitHub/drx/src/main.c",
+  "file": "/Users/fabricebeya/Documents/GitHub/drx/src/main.c",
+  "output": "CMakeFiles/DroneControlSystem.dir/src/main.c.o"
 },
 {
   "directory": "/Users/fabricebeya/Documents/GitHub/drx/build",
-  "command": "/usr/bin/clang++  -I/Users/fabricebeya/Documents/GitHub/drx/include -isystem /opt/homebrew/include/eigen3 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/DroneSimulation.dir/src/DroneModel.cpp.o -c /Users/fabricebeya/Documents/GitHub/drx/src/DroneModel.cpp",
-  "file": "/Users/fabricebeya/Documents/GitHub/drx/src/DroneModel.cpp",
-  "output": "CMakeFiles/DroneSimulation.dir/src/DroneModel.cpp.o"
+  "command": "/usr/bin/clang  -I/Users/fabricebeya/Documents/GitHub/drx/include -g -std=gnu99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/DroneControlSystem.dir/src/DroneState.c.o -c /Users/fabricebeya/Documents/GitHub/drx/src/DroneState.c",
+  "file": "/Users/fabricebeya/Documents/GitHub/drx/src/DroneState.c",
+  "output": "CMakeFiles/DroneControlSystem.dir/src/DroneState.c.o"
 },
 {
   "directory": "/Users/fabricebeya/Documents/GitHub/drx/build",
-  "command": "/usr/bin/clang++  -I/Users/fabricebeya/Documents/GitHub/drx/include -isystem /opt/homebrew/include/eigen3 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/DroneSimulation.dir/src/Controller.cpp.o -c /Users/fabricebeya/Documents/GitHub/drx/src/Controller.cpp",
-  "file": "/Users/fabricebeya/Documents/GitHub/drx/src/Controller.cpp",
-  "output": "CMakeFiles/DroneSimulation.dir/src/Controller.cpp.o"
+  "command": "/usr/bin/clang  -I/Users/fabricebeya/Documents/GitHub/drx/include -g -std=gnu99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o CMakeFiles/DroneControlSystem.dir/src/PIDController.c.o -c /Users/fabricebeya/Documents/GitHub/drx/src/PIDController.c",
+  "file": "/Users/fabricebeya/Documents/GitHub/drx/src/PIDController.c",
+  "output": "CMakeFiles/DroneControlSystem.dir/src/PIDController.c.o"
 }
 ]

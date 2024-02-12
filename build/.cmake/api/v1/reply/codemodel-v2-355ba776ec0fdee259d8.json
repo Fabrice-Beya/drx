@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "DroneSimulation",
+					"name" : "DroneControlSystem",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "DroneSimulation::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DroneSimulation-Debug-3bcc23f898fba517d0b2.json",
-					"name" : "DroneSimulation",
+					"id" : "DroneControlSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DroneControlSystem-Debug-33bcdb844c9d218c55d7.json",
+					"name" : "DroneControlSystem",
 					"projectIndex" : 0
 				}
 			]

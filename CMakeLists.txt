@@ -1,18 +1,16 @@
-# CMakeLists.txt
-cmake_minimum_required(VERSION 3.10)
-project(DroneSimulation)
+cmake_minimum_required(VERSION 3.10) # Specify the minimum version of CMake required
 
-# Specify C++ standard
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+project(DroneControlSystem C) # Name your project and specify it's a C project
 
-find_package(Eigen3 3.3 REQUIRED NO_MODULE)
+# Set the C standard to use
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD_REQUIRED True)
 
+# Add executable target with source files
+add_executable(DroneControlSystem src/main.c src/DroneState.c src/PIDController.c)
+
+# If you have any include directories, specify them here
 include_directories(include)
 
-# Add executable
-add_executable(DroneSimulation src/main.cpp src/DroneModel.cpp src/Controller.cpp)
-
-target_include_directories(DroneSimulation PRIVATE include)
-
-target_link_libraries(DroneSimulation Eigen3::Eigen)
+# If you need to link libraries, specify them here
+#target_link_libraries(DroneControlSystem m) # Link math library if needed

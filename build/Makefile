@@ -117,89 +117,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DroneSimulation
+# Target rules for targets named DroneControlSystem
 
 # Build rule for target.
-DroneSimulation: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DroneSimulation
-.PHONY : DroneSimulation
+DroneControlSystem: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DroneControlSystem
+.PHONY : DroneControlSystem
 
 # fast build rule for target.
-DroneSimulation/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/build
-.PHONY : DroneSimulation/fast
+DroneControlSystem/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/build
+.PHONY : DroneControlSystem/fast
 
-src/Controller.o: src/Controller.cpp.o
-.PHONY : src/Controller.o
-
-# target to build an object file
-src/Controller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/Controller.cpp.o
-.PHONY : src/Controller.cpp.o
-
-src/Controller.i: src/Controller.cpp.i
-.PHONY : src/Controller.i
-
-# target to preprocess a source file
-src/Controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/Controller.cpp.i
-.PHONY : src/Controller.cpp.i
-
-src/Controller.s: src/Controller.cpp.s
-.PHONY : src/Controller.s
-
-# target to generate assembly for a file
-src/Controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/Controller.cpp.s
-.PHONY : src/Controller.cpp.s
-
-src/DroneModel.o: src/DroneModel.cpp.o
-.PHONY : src/DroneModel.o
+src/DroneState.o: src/DroneState.c.o
+.PHONY : src/DroneState.o
 
 # target to build an object file
-src/DroneModel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/DroneModel.cpp.o
-.PHONY : src/DroneModel.cpp.o
+src/DroneState.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/DroneState.c.o
+.PHONY : src/DroneState.c.o
 
-src/DroneModel.i: src/DroneModel.cpp.i
-.PHONY : src/DroneModel.i
+src/DroneState.i: src/DroneState.c.i
+.PHONY : src/DroneState.i
 
 # target to preprocess a source file
-src/DroneModel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/DroneModel.cpp.i
-.PHONY : src/DroneModel.cpp.i
+src/DroneState.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/DroneState.c.i
+.PHONY : src/DroneState.c.i
 
-src/DroneModel.s: src/DroneModel.cpp.s
-.PHONY : src/DroneModel.s
+src/DroneState.s: src/DroneState.c.s
+.PHONY : src/DroneState.s
 
 # target to generate assembly for a file
-src/DroneModel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/DroneModel.cpp.s
-.PHONY : src/DroneModel.cpp.s
+src/DroneState.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/DroneState.c.s
+.PHONY : src/DroneState.c.s
 
-src/main.o: src/main.cpp.o
+src/PIDController.o: src/PIDController.c.o
+.PHONY : src/PIDController.o
+
+# target to build an object file
+src/PIDController.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/PIDController.c.o
+.PHONY : src/PIDController.c.o
+
+src/PIDController.i: src/PIDController.c.i
+.PHONY : src/PIDController.i
+
+# target to preprocess a source file
+src/PIDController.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/PIDController.c.i
+.PHONY : src/PIDController.c.i
+
+src/PIDController.s: src/PIDController.c.s
+.PHONY : src/PIDController.s
+
+# target to generate assembly for a file
+src/PIDController.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/PIDController.c.s
+.PHONY : src/PIDController.c.s
+
+src/main.o: src/main.c.o
 .PHONY : src/main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-src/main.i: src/main.cpp.i
+src/main.i: src/main.c.i
 .PHONY : src/main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-src/main.s: src/main.cpp.s
+src/main.s: src/main.c.s
 .PHONY : src/main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneSimulation.dir/build.make CMakeFiles/DroneSimulation.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneControlSystem.dir/build.make CMakeFiles/DroneControlSystem.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -209,13 +209,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DroneSimulation"
-	@echo "... src/Controller.o"
-	@echo "... src/Controller.i"
-	@echo "... src/Controller.s"
-	@echo "... src/DroneModel.o"
-	@echo "... src/DroneModel.i"
-	@echo "... src/DroneModel.s"
+	@echo "... DroneControlSystem"
+	@echo "... src/DroneState.o"
+	@echo "... src/DroneState.i"
+	@echo "... src/DroneState.s"
+	@echo "... src/PIDController.o"
+	@echo "... src/PIDController.i"
+	@echo "... src/PIDController.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
