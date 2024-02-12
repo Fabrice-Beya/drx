@@ -1,12 +1,19 @@
-// include/DroneModel.h
-#pragma once
+#ifndef DRONEMODEL_H
+#define DRONEMODEL_H
+
+#include <Eigen/Dense>
+#include <iostream>
 #include "DroneState.h"
-#include <array>
+
 
 class DroneModel {
 public:
-    DroneState state;
-    void updateState(const std::array<double, 4>& motorThrusts);
-    void applyControlActions(double forceX, double forceY, double thrust, double rollTorque, double pitchTorque, double yawTorque);
+    DroneState state; // Represents the current state of the drone
+
+    // Applies control actions to the drone's state
+    void applyControlActions(const Eigen::VectorXd& controlActions);
+
+    // Additional methods might be added here for further functionality
 };
 
+#endif // DRONEMODEL_H

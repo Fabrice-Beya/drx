@@ -11,8 +11,8 @@ public:
 
     Controller(const Eigen::VectorXd& kp, const Eigen::VectorXd& ki, const Eigen::VectorXd& kd, double dtValue)
         : kp(kp), ki(ki), kd(kd), dt(dtValue) {
-        integralErrors = Eigen::VectorXd::Zero(6);
-        previousErrors = Eigen::VectorXd::Zero(6);
+        integralErrors = Eigen::VectorXd::Zero(12);
+        previousErrors = Eigen::VectorXd::Zero(12);
     }
 
     void computeControlActions(const DroneState& currentState, const DroneState& setpoint, Eigen::VectorXd& controlActions);
